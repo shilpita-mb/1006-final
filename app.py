@@ -20,6 +20,10 @@ def hello():
 def sudoku():
     return "Sudoku is fun!"
 
+@app.route("/libraryalign")
+def library():
+    return render_template('libraries.html')
+
 #start the server
 if __name__ == "__main__":
     app.run()
