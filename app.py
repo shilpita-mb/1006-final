@@ -16,9 +16,9 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
-@app.route("/sudoku")
-def sudoku():
-    return "Sudoku is fun!"
+@app.route("/bonappetit")
+def crossword():
+    return render_template('bonappetit.html')
 
 @app.route("/libraryalign")
 def library():
